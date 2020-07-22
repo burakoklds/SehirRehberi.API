@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using SehirRehberi.API.Data;
 using Microsoft.AspNetCore.Cors;
 using AutoMapper;
+using Newtonsoft.Json;
 
 namespace SehirRehberi.API
 {
@@ -33,7 +34,10 @@ namespace SehirRehberi.API
                 x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddAutoMapper(typeof(Startup));
-            services.AddMvc();
+            services.AddMvc()
+                .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
+
+
             services.AddControllers();
             services.AddCors(options =>
             {
