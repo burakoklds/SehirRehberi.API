@@ -40,6 +40,7 @@ namespace SehirRehberi.API
                         .AllowAnyMethod()
                         .AllowAnyHeader());
             });
+            services.AddScoped<IAppRepository, AppRepositorty>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
