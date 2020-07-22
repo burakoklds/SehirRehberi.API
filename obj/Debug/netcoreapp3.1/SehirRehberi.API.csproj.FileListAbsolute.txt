@@ -123,5 +123,7 @@ C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\bin\Debug\netcorea
 C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\obj\Debug\netcoreapp3.1\SehirRehberi.API.csproj.CoreCompileInputs.cache
 C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\obj\Debug\netcoreapp3.1\SehirRehberi.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

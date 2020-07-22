@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using SehirRehberi.API.Data;
 using Microsoft.AspNetCore.Cors;
+using AutoMapper;
 
 namespace SehirRehberi.API
 {
@@ -29,9 +30,10 @@ namespace SehirRehberi.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(x =>
-            {
-                x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
-            });
+                x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddAutoMapper(typeof(Startup));
+            services.AddMvc();
             services.AddControllers();
             services.AddCors(options =>
             {
