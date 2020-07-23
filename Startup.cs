@@ -14,6 +14,9 @@ using SehirRehberi.API.Data;
 using Microsoft.AspNetCore.Cors;
 using AutoMapper;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace SehirRehberi.API
 {
@@ -24,12 +27,15 @@ namespace SehirRehberi.API
             Configuration = configuration;
         }
 
+        
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var key = Encoding.ASCII.GetBytes(Configuration.GetSection("Appsettings:Token").Value);
+
             services.AddDbContext<DataContext>(x =>
                 x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
@@ -47,6 +53,16 @@ namespace SehirRehberi.API
                         .AllowAnyHeader());
             });
             services.AddScoped<IAppRepository, AppRepositorty>();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -67,6 +83,7 @@ namespace SehirRehberi.API
                 endpoints.MapControllers();
             });
 
+            app.UseAuthentication();
         }
     }
 }
