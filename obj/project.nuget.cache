@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pxCDnI3QvzKc5uw5ZnDytOSi8JdogeFOZOCjqDVTvbXM8D4Tk6z9xL0UwjB0GdfQKGyOfGlsqgjguKOpjByLWQ==",
+  "dgSpecHash": "9bzCfnZVf+PtN9ZU6YiEJ/QnjzLwgFVmRqvBI8NHBW3cxVGcTvAK0+KFq6TnwAA3Lz0jF+GpetDCZT/1T+MEDQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\burak\\source\\repos\\SehirRehberi.API\\SehirRehberi.API\\SehirRehberi.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\burak\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\burak\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\burak\\.nuget\\packages\\cloudinarydotnet\\1.11.0\\cloudinarydotnet.1.11.0.nupkg.sha512",
     "C:\\Users\\burak\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.6\\microsoft.aspnetcore.authentication.jwtbearer.3.1.6.nupkg.sha512",
     "C:\\Users\\burak\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\burak\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

@@ -135,5 +135,3 @@ C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\bin\Debug\netcorea
 C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\obj\Debug\netcoreapp3.1\SehirRehberi.API.csproj.CoreCompileInputs.cache
-C:\Users\burak\source\repos\SehirRehberi.API\SehirRehberi.API\obj\Debug\netcoreapp3.1\SehirRehberi.API.MvcApplicationPartsAssemblyInfo.cache
