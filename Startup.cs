@@ -53,6 +53,7 @@ namespace SehirRehberi.API
                         .AllowAnyHeader());
             });
             services.AddScoped<IAppRepository, AppRepositorty>();
+            services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
                 options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
